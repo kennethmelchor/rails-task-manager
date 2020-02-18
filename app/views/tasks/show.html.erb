@@ -1,3 +1,7 @@
-<h1>Task</h1>
-<h2><%= @task.name %></h2>
-<%= link_to "List", tasks_path %>
+
+ <h1>Task selected</h1>
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+
+<%= link_to "Task List", tasks_path %>
+

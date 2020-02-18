@@ -1,1 +1,9 @@
-edit.html.erb
+
+<h1>Edit a task</h1>
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Edit", tasks_path %>
